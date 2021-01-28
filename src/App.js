@@ -41,14 +41,12 @@ export default class App extends Component {
                         return (
                             this.state.id === d.dt ?
                                 // current weather details
-                                <div>
-                                    <CardView
-                                        temp={d.main.temp}
-                                        location={this.state.location}
-                                        date={date}
-                                        climate={d.weather[0].main}
-                                    />
-                                </div>
+                                <CardView
+                                    temp={d.main.temp}
+                                    location={this.state.location}
+                                    date={date}
+                                    climate={d.weather[0].main}
+                                />
                                 :
                                 //upcoming weather list
                                 <ListView
